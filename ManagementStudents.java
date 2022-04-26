@@ -28,7 +28,10 @@ public class ManagementStudents {
     public void delete(int id){
         int index = ManagementStudents.this.index(id);
         if (index == id)
+        {
             this.studentList.remove(ManagementStudents.this.index(id));
+            System.out.println("delete success");
+        }
         else
             System.out.println("error");
     }
@@ -36,7 +39,10 @@ public class ManagementStudents {
     public void update(int id){
         int index = ManagementStudents.this.index(id);
         if (index == id)
+        {
             this.studentList.get(index).inputData();
+            System.out.println("update success");
+        }
         else
             System.out.println("error");
     }

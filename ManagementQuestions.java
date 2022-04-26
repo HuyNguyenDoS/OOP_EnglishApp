@@ -45,7 +45,7 @@ public class ManagementQuestions {
 
     public Questions randomIncomplete(int level){
         ManagementQuestions m = new ManagementQuestions();
-        for(Questions q : question){
+            for(Questions q : question){
             if(q instanceof Incomplete && q.getLevel() == level){
                 m.addQuestion(q);
             }

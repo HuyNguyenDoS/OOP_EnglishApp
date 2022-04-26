@@ -10,11 +10,11 @@ public class Menu {
     public void Controller() {
         ManagementQuestions managementQuestion = new ManagementQuestions();
 
-        Student h1 = new Student("user1", "user1", "Nguyen Huu Nam", 0, "19/9/2001", "Ha Noi");
-        Student h2 = new Student("user2", "user2", "Nguyen Hoang Anh", 0, "17/10/2007", "Ha Noi");
-        Student h3 = new Student("user3", "user3", "Bui Thi Lan", 1, "19/9/2001", "Thai Binh");
-        Student h4 = new Student("user4", "user4", "Nguyen Nhat Sang", 0, "14/3/2001", "Hue");
-        Student h5 = new Student("user5", "user5", "Huynh Nguyen", 0, "16/5/2001", "Quang Nam");
+        Student h1 = new Student("user1", "user1", "Nguyen Huu A", 0, "19/9/2001", "Ha Noi");
+        Student h2 = new Student("user2", "user2", "Nguyen Hoang B ", 0, "17/10/2007", "Ha Noi");
+        Student h3 = new Student("user3", "user3", "Bui Thi C", 1, "19/9/2001", "Thai Binh");
+        Student h4 = new Student("user4", "user4", "Nguyen Nhat D", 0, "14/3/2001", "Hue");
+        Student h5 = new Student("user5", "user5", "Nguyen F", 0, "16/5/2001", "Quang Nam");
 
         ManagementStudents managementStudent = new ManagementStudents();
         managementStudent.add(h1);
@@ -253,7 +253,7 @@ public class Menu {
         managementQuestion.addQuestion(i5);
         managementQuestion.addQuestion(i6);
 
-//      qlCauHoi.danhSachTheoInComplete().thucThi();
+//qlCauHoi.danhSachTheoInComplete().thucThi();
 //Conservation
         Conversation c1 = new Conversation("Success", "Books which give instructions on how to do things are very popular in the United States today.\nThousands of these How-to books are useful. In fact, there are about four thousand books with\ntitles that begin with the words “How to”.One book may tell you how to earn more money.\nAnother may tell you how to save or spend it and another may explain how to give your money away.\n"
                 + "\n"

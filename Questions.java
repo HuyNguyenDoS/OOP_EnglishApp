@@ -7,7 +7,7 @@ public abstract class Questions {
     private String content;
     private int level;
 
-
+    
     {
         count++;
         this.serial = count;
