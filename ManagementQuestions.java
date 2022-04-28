@@ -11,6 +11,10 @@ public class ManagementQuestions {
         this.question = new ArrayList<>();
     }
 
+    public void setQuestionIncomplete(List<Questions> question) {
+        this.question = question;
+    }
+
     public List<Questions> getQuestions(){
         return question;
     }
@@ -45,23 +49,26 @@ public class ManagementQuestions {
 
     public Questions randomIncomplete(int level){
         ManagementQuestions m = new ManagementQuestions();
-            for(Questions q : question){
+
+        for(Questions q : this.question)
+        {
             if(q instanceof Incomplete && q.getLevel() == level){
                 m.addQuestion(q);
             }
         }
-        int index = (int) (Math.random() * (m.getQuestions().size()));
+        int index = (int) ((Math.random() * (m.getQuestions().size() - 0)) + 0);
         return m.getQuestions().get(index);
     }
 
     public Questions randomConversation(int level){
         ManagementQuestions m = new ManagementQuestions();
-        for(Questions q : question){
+        for(Questions q : this.question){
             if(q instanceof Conversation && q.getLevel() == level){
                 m.addQuestion(q);
             }
         }
-        int index = (int) (Math.random() * (m.getQuestions().size()));
+       
+        int index = (int) ((Math.random() * (m.getQuestions().size() - 0)) + 0);
         return m.getQuestions().get(index);
     }
 

@@ -459,8 +459,8 @@ public class Menu {
         c3.addQuestion(c3m5);
 
         managementQuestion.addQuestion(c1);
-        managementQuestion.addQuestion(c3);
         managementQuestion.addQuestion(c2);
+        managementQuestion.addQuestion(c3);
 
         int choiceMenuChinh, choiceNguoiHoc, choiceLoaiCauHoi, choiceQuanLiCauHoi;
         boolean mainThread, threadNguoiHoc, threadLamBai, threadCauHoi;
@@ -491,6 +491,7 @@ public class Menu {
                                 Date ns;
                                 ns = dmy.inputDMY(sc.nextLine());
                                 managementStudent.searchBirthday(ns).exportList();
+
                                 break;
                             case 3:
                                 System.out.print("Nhap ten can tra cuu: ");

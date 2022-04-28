@@ -20,10 +20,6 @@ public class MultipleChoice extends Questions{
         this.choices = choice;
     }
 
-    // @Override
-    // public String getChuDe(){
-    //     return super.getChuDe();
-    // }
 
     @Override
     public String toString(){
@@ -42,6 +38,7 @@ public class MultipleChoice extends Questions{
             this.choices.add(c);
     }
 
+    //hàm shuffle giúp xáo trộn câu trả lời
     public void shuffleChoice() {
         Collections.shuffle(this.choices);
     }

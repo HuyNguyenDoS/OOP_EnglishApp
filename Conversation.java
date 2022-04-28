@@ -16,22 +16,6 @@ public class Conversation extends Questions {
         this.questionConversation = new ArrayList<>();
     }
 
-    public int getLevel(){
-        return level;
-    }
-
-    public void setLevel(int level){
-        this.level = level;
-    }
-
-    public List<MultipleChoice> getQuestionConversation(){
-        return questionConversation;
-    }
-
-    public void setQuestionConversation(List<MultipleChoice> questionConversation){
-        this.questionConversation = questionConversation;
-    }
-
     public void addQuestion(MultipleChoice m){
         this.questionConversation.add(m);
     }
@@ -44,7 +28,7 @@ public class Conversation extends Questions {
             this.questionConversation.get(i).excute();
         }
     }
-    //chua hieu dc cai for voi override cai super.toString la gi
+    
     @Override
     public String toString(){
         String s = super.toString();
@@ -53,4 +37,28 @@ public class Conversation extends Questions {
         }
         return s;
     }
+
+    /**
+     * @return the question
+     */
+    public List<MultipleChoice> getQuestionConversation(){
+        return questionConversation;
+    }
+
+    /**
+     * @param questionConversation the question to set
+    */
+    public void setQuestionConversation(List<MultipleChoice> questionConversation){
+        this.questionConversation = questionConversation;
+    }
+    
+    public int getLevel(){
+        return this.level;
+    }
+
+    public void setLevel(int level){
+        this.level = level;
+    }
+
+    
 }
